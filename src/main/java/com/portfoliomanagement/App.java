@@ -25,7 +25,7 @@ public class App {
                 try {
                     choice = Integer.parseInt(sc.nextLine());
                 } catch (NumberFormatException e) {
-                    System.out.println("❌ Invalid input. Please enter a number.");
+                    System.out.println(" Invalid input. Please enter a number.");
                     continue;
                 }
 
@@ -40,7 +40,7 @@ public class App {
                         try {
                             grade = Double.parseDouble(sc.nextLine());
                         } catch (NumberFormatException e) {
-                            System.out.println("❌ Invalid grade.");
+                            System.out.println(" Invalid grade.");
                             break;
                         }
                         addStudent(conn, name, email, grade);
